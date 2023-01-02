@@ -1,0 +1,7 @@
+%{
+  "avrora": {:hex, :avrora, "0.24.2", "e2f52903fea3758766b469c39bdf78c852020ab9cfad03703247d2b9d580b339", [:mix], [{:erlavro, "~> 2.9.3", [hex: :erlavro, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}], "hexpm", "13362720e92b9922aa1b13d5c48ad01caf5003e78a14ec0ca5031f8563f00656"},
+  "erlavro": {:hex, :erlavro, "2.9.8", "9b9c0eff6dc1c708a277b4143c0020659c42bcd634d0d7237c6435fb0c2f3266", [:make, :rebar3], [{:jsone, "1.4.6", [hex: :jsone, repo: "hexpm", optional: false]}, {:snappyer, "1.2.8", [hex: :snappyer, repo: "hexpm", optional: false]}], "hexpm", "7182c539f408633927b30380aa6123ea3e4b9a04c2bc752f0fe227ef5e9c3a70"},
+  "jason": {:hex, :jason, "1.4.0", "e855647bc964a44e2f67df589ccf49105ae039d4179db7f6271dfd3843dc27e6", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "79a3791085b2a0f743ca04cec0f7be26443738779d09302e01318f97bdb82121"},
+  "jsone": {:hex, :jsone, "1.4.6", "644d6d57befb22c8e19b324dee19d73b1c004565009861a8f64c68b7b9e64dbf", [:rebar3], [], "hexpm", "78eee8bb38f0bee2e73673d71bc75fc6fb01f56f0d23e769a26eee3655487a38"},
+  "snappyer": {:hex, :snappyer, "1.2.8", "201ce9067a33c71a6a5087c0c3a49a010b17112d461e6df696c722dcb6d0934a", [:rebar3], [], "hexpm", "35518e79a28548b56d8fd6aee2f565f12f51c2d3d053f9cfa817c83be88c4f3d"},
+}

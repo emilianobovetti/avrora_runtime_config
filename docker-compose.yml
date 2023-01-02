@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  main:
+    build:
+      context: .
+      args:
+        UID: 1000
+        GID: 1000
+    volumes:
+      - "$PWD:/home/app/prj"
+    environment:
+      SCHEMA_REGISTRY_URL: http://schema-registry:8080/apis/ccompat/v6
+    depends_on:
+      schema-registry:
+        condition: service_healthy
+
+  schema-registry:
+    image: apicurio/apicurio-registry-mem:2.4.1.Final
+    healthcheck:
+      test: ["CMD", "curl", "--silent", "--fail", "http://localhost:8080/health"]
+      start_period: 30s
+      interval: 1s
+      timeout: 1s
+      retries: 3
+    restart: unless-stopped

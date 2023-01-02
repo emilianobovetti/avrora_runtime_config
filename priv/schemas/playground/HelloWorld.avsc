@@ -1,0 +1,14 @@
+{
+  "doc": "I'm just a placeholder",
+  "name": "HelloWorld",
+  "namespace": "playground",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "Hello ID",
+      "name": "id",
+      "type": "string",
+      "logicalType": "uuid"
+    }
+  ]
+}
